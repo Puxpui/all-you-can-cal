@@ -21,16 +21,17 @@ function Scholarship() {
           <button onClick={calculateTotal} id='calbutton' className='h-8 px-4 border-2 bg-white bg-opacity-50 border-opacity-50 border-black m-2 text-base rounded-full select-none'>คำนวน</button>
         </div>
         <div className='absolute mt-[15%] bg-base-100 bg-opacity-55 rounded-lg w-[30%] h-[50%]'>
-          <p className='p-4 pb-0 flex justify-center'>รายการค่าใช้จ่าย</p>
+          <p className='p-4 pb-0 flex justify-center'>รายการค่าใช้จ่าย (ต่อวัน)</p>
           <div className="relative pt-4 pb-2">
             <div id='listshow' className="absolute left-[10%]"></div>
             <div id='priceshow' className="absolute right-[10%]"></div>
           </div>
-          <div id='lasttotal' className="flex justify-center mt-[45%] text-lg font-bold"></div>
-          <div id='yeartotal' className="flex justify-center text-lg font-bold"></div>
-          <div id='sarup' className="flex justify-center text-lg font-bold"></div>
+          <div id='lasttotal' className="flex justify-center mt-[45%] text-sm font-bold"></div>
+          <div id='monthtotal' className="flex justify-center text-sm font-bold"></div>
+          <div id='yeartotal' className="flex justify-center text-sm font-bold"></div>
+          <div id='sarup' className="flex justify-center text-sm font-bold"></div>
           <div className='flex justify-center '>
-          <button onClick={clearsave} className='items-center h-8 px-4 border-2 bg-white bg-opacity-55 border-opacity-0 border-black m-2 text-base rounded-full select-none'>ล้างค่า</button>
+            <button onClick={clearsave} className='items-center h-8 px-4 border-2 bg-white bg-opacity-55 border-opacity-0 border-black m-2 text-base rounded-full select-none'>ล้างค่า</button>
           </div>
         </div>
       </div>

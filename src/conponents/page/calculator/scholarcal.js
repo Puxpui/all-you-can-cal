@@ -25,9 +25,11 @@ export const savelistprice = () => {
       const price = parseFloat(priceElement.textContent.replace(' บาท', ''));
       total += price;
     });
-  
-    const totalInYear = total * 12;
-    document.getElementById('lasttotal').innerHTML = 'ยอดรวมทั้งหมด: ' + total + ' บาท';
+    
+    const totalInMonth = total * 30;
+    const totalInYear = totalInMonth * 12;
+    document.getElementById('lasttotal').innerHTML = 'ยอดรวมทั้งหมด ' + total + ' บาท';
+    document.getElementById('monthtotal').innerHTML = 'ยอดรวมทั้งหมดใน 1 เดือน ' + totalInMonth + ' บาท';
     document.getElementById('yeartotal').innerHTML = 'ยอดรวมทั้งหมดใน 1 ปี ' + totalInYear + ' บาท';
     document.getElementById('sarup').innerHTML = 'ควรมอบทุนการศึกษาอย่างน้อยประมาณ ' + totalInYear + ' บาทต่อปี';
   };

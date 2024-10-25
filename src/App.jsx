@@ -22,7 +22,7 @@ function App() {
                   คำนวนค่าใช้จ่ายประจำวัน
                 </Link>
                 <Link to="/areacal" className='btn font-semibold text-base bg-white text-black hover:border border-transparent hover:border-transparent rounded-full mt-[20%]'>
-                  คำนวนความพื้นที่
+                  คำนวนพื้นที่
                 </Link>
                 <Link to="/scholarship" className='btn font-semibold text-base bg-white text-black hover:border border-transparent hover:border-transparent rounded-full mt-[20%]'>
                   คำนวนทุนการศึกษา
